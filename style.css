@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+.mobile-show {
+    display: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    align-items: center;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu-link{
+    margin-left: 16px;
+}
+
+
+/* hero */
+.hero{
+    display: flex;
+}
+
+/* information */
+.information{
+    display: flex;
+}
