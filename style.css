@@ -12,21 +12,25 @@
 }
 
 p,
-a,
-h2 {
+a {
     font-family: "Roboto", sans-serif;
     color: #4a4a4a;
-    font-weight: 500;
+    /* font-weight: 500; */
+    font-size: 1.1rem;
 }
-h3{
+
+h2,
+h3 {
     font-family: "Roboto", sans-serif;
     color: #4a4a4a;
     font-weight: 700;
 }
+
 a {
     text-decoration: none;
 }
-.readmore-link{
+
+.readmore-link {
     color: #4c8fdc;
 }
 
@@ -51,6 +55,14 @@ a {
     height: 2rem;
 }
 
+.logo p {
+    color: #9b9b9b;
+}
+
+.logo b {
+    color: #4a4a4a;
+}
+
 .menu {
     display: flex;
     justify-content: space-evenly;
@@ -68,12 +80,14 @@ a {
     padding: 32px 24px 32px;
 }
 
-.hero h2 {
+.hero h1 {
+    font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-size: 2rem;
     color: #4a4a4a;
 }
-.hero p{
+
+.hero p {
     font-weight: 700;
     color: #4a4a4a;
 }
@@ -214,6 +228,7 @@ a {
     background-color: #ffffff;
 }
 
+
 .course-img img {
     width: 100%;
 }
@@ -222,19 +237,25 @@ a {
     padding: 16px 16px 24px;
 }
 
+.course-info p {
+    color: #767676;
+}
+
 .course-type {
     margin-top: 8px;
     margin-bottom: 8px;
 }
 
 /* thesis */
-.thesis{
+.thesis {
     background-color: #f3f5f4;
 }
-.thesis-header{
+
+.thesis-header {
     padding-top: 32px;
     text-align: center;
 }
+
 .thesis-content {
     display: flex;
     padding: 32px 24px 32px;
@@ -244,7 +265,8 @@ a {
     display: flex;
     padding: 16px;
 }
-.thesis-card p{
+
+.thesis-card p {
     margin-top: 16px;
 
 }
@@ -284,15 +306,95 @@ a {
 .thesis-card-img img {
     width: 100%;
 }
+
 /* footer */
-.footer{
+.footer {
     display: flex;
     justify-content: space-between;
     padding: 16px 24px;
     background-color: #f3f5f4;
     border: 2px solid #e9ebea;
 }
-.terms-and-privacy{
+
+.terms-and-privacy {
     display: flex;
-    gap:16px;
+    gap: 16px;
+}
+
+
+/* mobile */
+
+@media (max-width: 768px) {
+    .mobile-show {
+        display: inline-block;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+    .nav{
+        display: block;
+    }
+
+    .menu-mobile {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 64px;
+        /* padding-left: 24px;
+        padding-right: 24px; */
+        align-items: center;
+    }
+
+    .hero{
+        flex-direction: column;
+        padding: 0;
+    }
+    .hero-featured-img{
+        width: 100%;
+    }
+    .hero-featured-info{
+        width: 100%;
+        padding: 32px 16px 32px;
+    }
+    .hero p{
+        margin-top: 32px;
+        margin-bottom: 24px
+    }
+    .information{
+        padding: 0;
+    }
+    .information-featured-aside{
+        width: 100%;
+        border: none;
+       
+    }
+    .information-card{
+        display: block;
+        width: 100%;
+    
+    }
+    .information-card-img{
+        width: 100%;
+        /* background-size: cover;
+        background-position: center; */
+        height: 200px;
+    }
+
+    #img-orientation {
+        background-image: url('assets/images/information-orientation-mobile.jpg');
+        /* height: 25vh; */
+    
+    }
+    
+    #img-campus {
+        background-image: url('assets/images/information-campus-mobile.jpg');
+        height: auto;
+    }
+    
+    #img-guest-lecture {
+        background-image: url('assets/images/information-guest-lecture-mobile.jpg');
+        height: auto;
+    }
+
 }
