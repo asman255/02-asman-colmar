@@ -46,8 +46,13 @@ a {
     padding-left: 24px;
     padding-right: 24px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
 
 }
+
 
 .logo {
     display: flex;
@@ -324,7 +329,7 @@ a {
 
 /* mobile */
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     .mobile-show {
         display: inline-block;
     }
@@ -332,8 +337,10 @@ a {
     .mobile-hide {
         display: none;
     }
-    .nav{
+
+    .nav {
         display: block;
+
     }
 
     .menu-mobile {
@@ -346,55 +353,109 @@ a {
         align-items: center;
     }
 
-    .hero{
+    .hero {
         flex-direction: column;
         padding: 0;
     }
-    .hero-featured-img{
+
+    .hero-featured-img {
         width: 100%;
     }
-    .hero-featured-info{
+
+    .hero-featured-info {
         width: 100%;
         padding: 32px 16px 32px;
     }
-    .hero p{
+
+    .hero p {
         margin-top: 32px;
         margin-bottom: 24px
     }
-    .information{
+
+    .information {
         padding: 0;
     }
-    .information-featured-aside{
+
+    .information-featured-aside {
         width: 100%;
         border: none;
-       
+        padding-top: 16px;
+
     }
-    .information-card{
+
+    .information-card {
         display: block;
         width: 100%;
-    
+
     }
-    .information-card-img{
+
+    .information-card-info {
+        padding-left: 16px;
+        margin-top: 16px;
         width: 100%;
-        /* background-size: cover;
-        background-position: center; */
-        height: 200px;
+    }
+
+    .information-card-img {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* height: 200vh; */
     }
 
     #img-orientation {
         background-image: url('assets/images/information-orientation-mobile.jpg');
-        /* height: 25vh; */
-    
-    }
-    
-    #img-campus {
-        background-image: url('assets/images/information-campus-mobile.jpg');
-        height: auto;
-    }
-    
-    #img-guest-lecture {
-        background-image: url('assets/images/information-guest-lecture-mobile.jpg');
-        height: auto;
+        height: 25vh;
+
     }
 
+    #img-campus {
+        background-image: url('assets/images/information-campus-mobile.jpg');
+        height: 25vh;
+    }
+
+    #img-guest-lecture {
+        background-image: url('assets/images/information-guest-lecture-mobile.jpg');
+        height: 25vh;
+    }
+
+    .course-list {
+        flex-direction: column;
+        padding: 16px 8px 32px;
+        gap: 8px;
+    }
+
+    .course-card {
+        width: 100%;
+        background-color: #d8d8d8;
+    }
+
+    .course-img {
+        display: none;
+    }
+
+    .course-info {
+        padding: 16px 16px 24px;
+    }
+
+    .course-type,
+    .course-desc {
+        display: none;
+    }
+
+    .thesis-content {
+        padding: 16px 0 24px;
+    }
+
+    .thesis-featured-main {
+        width: 100%;
+    }
+
+    .thesis-featured-video {
+        margin-right: 0;
+    }
+
+    .footer p {
+        font-size: 0.7rem;
+    }
 }
