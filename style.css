@@ -8,6 +8,15 @@
     display: none;
 }
 
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* nav */
 .nav{
     display: flex;
     justify-content: space-between;
@@ -21,6 +30,10 @@
 .logo{
     display: flex;
     align-items: center;
+    height: 2rem;
+}
+.logo-text{
+    /* font-size: 32px; */
 }
 .menu{
     display: flex;
@@ -34,9 +47,38 @@
 /* hero */
 .hero{
     display: flex;
+    background-color: #d8d8d8;
+    padding: 32px 24px 32px;
+}
+.hero-featured-img{
+    width: 60%;
+    margin-right: 24px;
+}
+.hero-featured-img img{
+    width: 100%;
+}
+.hero-featured-info{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* information */
 .information{
+    display: flex;
+}
+.information-card{
+    display: flex;
+}
+
+/* course */
+.course-list{
+    display: flex;
+}
+
+
+/* thesis */
+.thesis-card{
     display: flex;
 }
