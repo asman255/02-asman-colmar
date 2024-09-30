@@ -4,24 +4,37 @@
     box-sizing: border-box;
     margin: 0;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .mobile-show {
     display: none;
 }
-p,a,h1,h2,h3{
-    font-family: "Roboto", sans-serif;
-}
 
+p,
+a,
+h2 {
+    font-family: "Roboto", sans-serif;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+h3{
+    font-family: "Roboto", sans-serif;
+    color: #4a4a4a;
+    font-weight: 700;
+}
 a {
     text-decoration: none;
-    color: black;
 }
+.readmore-link{
+    color: #4c8fdc;
+}
+
 
 
 
 /* nav */
-.nav{
+.nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -31,47 +44,58 @@ a {
     align-items: center;
 
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     height: 2rem;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-evenly;
 }
-.menu-link{
+
+.menu-link {
     margin-left: 16px;
 }
 
 
 /* hero */
-.hero{
+.hero {
     display: flex;
     background-color: #d8d8d8;
     padding: 32px 24px 32px;
 }
-.hero h2{
+
+.hero h2 {
     font-weight: 900;
     font-size: 2rem;
     color: #4a4a4a;
 }
-.hero-featured-img{
+.hero p{
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+.hero-featured-img {
     width: 60%;
     margin-right: 24px;
 }
-.hero-featured-img img{
+
+.hero-featured-img img {
     width: 100%;
 }
-.hero-featured-info{
+
+.hero-featured-info {
     width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px
 }
-.hero-start-button{
+
+.hero-start-button {
     padding: 8px;
     background-color: #4a4a4a;
     text-align: center;
@@ -79,113 +103,196 @@ a {
 }
 
 /* information */
-.information{
+.information {
     display: flex;
     background-color: #f3f5f4;
     /* padding: 32px 24px 32px;  not working properly when using border aside*/
     padding-left: 24px;
 }
-.information-featured-main{
+
+.information-featured-main {
     width: 60%;
 }
-.information-featured-aside{
+
+.information-featured-aside {
     width: 40%;
     border-left: 2px solid #e0e2e1;
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.information-featured-main{
+
+.information-featured-main {
     margin-right: 24px;
     padding-top: 32px;
     padding-bottom: 32px;
-    
+
 }
-.information-featured-main img{
+
+.information-featured-main img {
     width: 100%;
-    
+
 }
-.information-featured-main h2{
+
+.information-featured-main h2 {
     margin-top: 32px;
     margin-bottom: 24px;
 }
-.information-featured-main p{
+
+.information-featured-main p {
     margin-top: 24px;
 }
 
 
 
-.information-card{
+.information-card {
     display: flex;
     height: 33%;
     padding: 16px;
 }
-.information-card:hover{
+
+.information-card:hover {
     background-color: #d8d8d8;
 }
-.information-card-img{
+
+.information-card-img {
     width: 35%;
-    
+
     background-size: cover;
     background-position: center;
 
 }
-.information-card-info{
+
+.information-card-info {
     width: 65%;
     align-self: center;
     padding-left: 24px;
 
-  
+
 }
-.information-card-info p{
+
+.information-card-info p {
     margin-top: 8px;
     margin-bottom: 8px;
 }
-#img-orientation{
+
+#img-orientation {
     background-image: url('assets/images/information-orientation.jpg');
     height: auto;
-    
+
 }
-#img-campus{
+
+#img-campus {
     background-image: url('assets/images/information-campus.jpg');
     height: auto;
 }
-#img-guest-lecture{
+
+#img-guest-lecture {
     background-image: url('assets/images/information-guest-lecture.jpg');
     height: auto;
 }
+
 /* course */
-.course{
+.course {
     background-color: #eaebed;
 }
-.course-header{
+
+.course-header {
     text-align: center;
     padding-top: 32px;
 }
-.course-list{
+
+.course-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 32px;
     padding: 32px 72px;
 }
-.course-card{
+
+.course-card {
     width: 31.5%;
     background-color: #ffffff;
 }
-.course-img img{
+
+.course-img img {
     width: 100%;
 }
-.course-info{
+
+.course-info {
     padding: 16px 16px 24px;
 }
-.course-type{
+
+.course-type {
     margin-top: 8px;
     margin-bottom: 8px;
 }
+
 /* thesis */
-.thesis-content{
-    display: flex;
+.thesis{
+    background-color: #f3f5f4;
 }
-.thesis-card{
+.thesis-header{
+    padding-top: 32px;
+    text-align: center;
+}
+.thesis-content {
     display: flex;
+    padding: 32px 24px 32px;
+}
+
+.thesis-card {
+    display: flex;
+    padding: 16px;
+}
+.thesis-card p{
+    margin-top: 16px;
+
+}
+
+.thesis-featured-main {
+    width: 60%;
+}
+
+.thesis-featured-main h3 {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+
+.thesis-featured-video {
+    margin-right: 24px;
+}
+
+.thesis-aside {
+    width: 40%;
+
+}
+
+.thesis-card:hover {
+    background-color: #d8d8d8;
+}
+
+.thesis-card-img {
+    width: 35%;
+    margin-right: 16px;
+}
+
+.thesis-card-info {
+    width: 65%;
+}
+
+.thesis-card-img img {
+    width: 100%;
+}
+/* footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    background-color: #f3f5f4;
+    border: 2px solid #e9ebea;
+}
+.terms-and-privacy{
+    display: flex;
+    gap:16px;
 }
