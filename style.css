@@ -34,10 +34,19 @@ a {
     color: #4c8fdc;
 }
 
-
+body{
+    background-color: #d8d8d8;
+}
 
 
 /* nav */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ffffff;
+    box-shadow: 0px 7px 11px -4px rgba(0, 0, 0, 0.281);
+}
 .nav {
     display: flex;
     justify-content: space-between;
@@ -46,10 +55,7 @@ a {
     padding-left: 24px;
     padding-right: 24px;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    
+ 
 
 }
 
@@ -233,6 +239,9 @@ a {
     background-color: #ffffff;
 }
 
+.course-card:hover{
+    box-shadow: 5px 7px 11px -4px rgba(0, 0, 0, 0.466);
+}
 
 .course-img img {
     width: 100%;
@@ -318,7 +327,10 @@ a {
     justify-content: space-between;
     padding: 16px 24px;
     background-color: #f3f5f4;
-    border: 2px solid #e9ebea;
+    border-top: 2px solid #e9ebea;
+}
+.footer p{
+    font-size: 0.9rem;
 }
 
 .terms-and-privacy {
@@ -370,6 +382,9 @@ a {
     .hero p {
         margin-top: 32px;
         margin-bottom: 24px
+    }
+    .hero-start-button{
+        background-color: #9b9b9b;
     }
 
     .information {
@@ -442,7 +457,9 @@ a {
     .course-desc {
         display: none;
     }
-
+.thesis-header h2::after{
+    content: 's';
+}
     .thesis-content {
         padding: 16px 0 24px;
     }
